@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%~ include('./head', it) %>
+  <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-12 col-md-8 col-lg-5">
+
+        <%~ include('./logo') %>
+
+        <form id="rForm" class="form-card" action="/user/validate" method="POST" novalidate>
+          <h1 class="title mb-3 text-center">Prueba nuestra metodología digital</h1>
+          <p class="subtitle text-center mb-4">Únete a nuestra comunidad de 10,000 alumnos. Ingresa tus datos para recibir tu clase de prueba gratuita.*</p>
+
+          <div class="mb-4">
+            <label for="name" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Tu nombre" value="<%= it.usu || '' %>" required>
+          </div>
+
+          <div class="mb-4">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="tu@email.com" value="<%= it.emi || '' %>" required>
+          </div>
+
+          <button type="submit" id="btn" class="btn btn-primary btn-lg w-100 mb-3">Obtener mi clase gratis</button>
+
+          <div id="msg" class="alert alert-warning <%= (it.msg && it.msg.length)?'':'d-none' %>" role="alert">
+            <% if (it.msg && it.msg.length > 0) { %>
+              <% it.msg.forEach(t => { %>
+                <%= t %><br>
+              <% }) %>
+            <% } %>
+          </div>
+
+          <p class="form-note text-center">* Recibirás un email con un acceso directo (Deeplink) para comenzar tu capacitación ahora mismo.</p>
+        </form>
+
+        <%~ include('./footer', it) %>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/register.js"></script>
+
+</body>
+</html>

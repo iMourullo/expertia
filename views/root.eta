@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%~ include('./head', it) %>
+  <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-12 col-md-8 col-lg-5">
+        <%~ include('./logo') %>
+        <%~ include('./footer', it) %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

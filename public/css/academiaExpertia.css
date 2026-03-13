@@ -1,0 +1,108 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/montserrat-v31-latin-600.woff2') format('woff2');
+}
+
+/* montserrat-800 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fonts/montserrat-v31-latin-800.woff2') format('woff2');
+}
+
+body {
+  background-color: #f4f7f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Botón con colores personalizados de la compañía */
+button, 
+[type="submit"], 
+[role="button"] {
+  background-color: #f26c36 !important;
+  border: 1px solid #fca800 !important;
+  color: #fff;
+  /* transition: background-color 0.2s ease; */
+}
+
+button:hover, 
+[type="submit"]:hover {
+  background-color: #fca800 !important;
+  transition: all 0.3s ease-out;
+  /* border-color: #d45a2a !important; */
+}
+
+.auth-container {
+  max-width: 450px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.brand-logo {
+  display: block;
+  margin: 0 auto 2rem auto;
+  height: 75px;
+  width: auto;
+}
+
+.copyright-footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--pico-muted-color);
+  margin-top: 2rem;
+  letter-spacing: 1px;
+}
+
+.copyright-footer .orange-mark {
+  color: var(--pico-primary);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.bold {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+article {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border: none;
+  border-radius: 0.75rem;
+}
+
+/* Borde superior institucional para cajas y artículos */
+.border-top-expertia {
+  border-top: 4px solid var(--pico-primary) !important;
+}
+
+.icon-container {
+  background-color: #fffaf0;
+  padding: 1.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  animation: scaleIn 2s ease-out forwards;
+  margin-bottom: 1.5rem;
+}
+@keyframes scaleIn {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

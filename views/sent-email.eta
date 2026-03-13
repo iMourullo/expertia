@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%~ include('./head', it) %>
+  <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-12 col-md-8 col-lg-5">
+
+        <%~ include('./logo') %>
+
+        <div class="form-card">
+          <div class="email-icon-wrapper text-center mb-4">
+            <div class="email-circle">
+              <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#f26c36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <h1 class="title mb-3 text-center">¡Todo listo! Revisa tu correo</h1>
+          <p class="subtitle text-center mb-4">Hemos enviado un <strong>enlace de acceso único</strong> a tu bandeja de entrada. No necesitas contraseña, solo haz clic en el botón del correo para comenzar.</p>
+          
+          <div class="tips-box mb-4">
+            <h3 class="tips-title">¿No encuentras el correo?</h3>
+            <ul class="tips-list">
+              <li>Revisa la carpeta de <b>Spam</b> o <b>Promociones</b>.</li>
+              <li>Espera de 1 a 2 minutos para que llegue.</li>
+            </ul>
+          </div>
+          
+          <p class="text-center retry-link">
+            <a href="/pre-register/">¿Te equivocaste de correo? Volver a intentar</a>
+          </p>
+        </div>
+
+        <%~ include('./footer', it) %>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
