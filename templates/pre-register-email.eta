@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="x-apple-disable-message-reformatting"/>
+  <title>Activá tu acceso — Academia Expertia Capacita</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style>
+    /* Reset básico */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; display: block; outline: none; }
+    a { text-decoration: none; }
+
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: #f4f5f7;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+    /* Botón hover solo para clientes que lo soportan */
+    .btn-cta:hover {
+      background-color: #fca800 !important;
+    }
+
+    /* Responsive */
+    @media only screen and (max-width: 600px) {
+      .email-wrapper { width: 100% !important; }
+      .email-body { padding: 32px 24px !important; }
+      .email-header { padding: 28px 24px !important; }
+      .btn-cta { width: 100% !important; display: block !important; }
+    }
+  </style>
+  <!-- Google Fonts (soportado en la mayoría de clientes modernos) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f4f5f7;">
+
+  <!-- Preheader oculto (aparece como preview en la bandeja de entrada) -->
+  <div style="display:none; max-height:0; overflow:hidden; mso-hide:all;">
+    Tu acceso a Academia Expertia Capacita está listo. Hacé clic para ingresar.
+    &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
+
+  <!-- Wrapper principal -->
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+    style="background-color:#f4f5f7; min-width:100%;">
+    <tr>
+      <td align="center" style="padding: 32px 16px;">
+
+        <!-- Email container -->
+        <table class="email-wrapper" role="presentation" width="560" cellspacing="0" cellpadding="0" border="0"
+          style="max-width:560px; width:100%;">
+
+          <!-- ===== HEADER con logo ===== -->
+          <tr>
+            <td class="email-header" align="center"
+              style="background-color:#ffffff; border-radius:16px 16px 0 0; padding:36px 40px 28px; border-bottom: 3px solid #f26c36;">
+              <img src="cid:logo_expertia" alt="Academia Expertia Capacita" width="200" style="max-width:200px; height:auto;"/>
+            </td>
+          </tr>
+
+          <!-- ===== BODY principal ===== -->
+          <tr>
+            <td class="email-body" align="left"
+              style="background-color:#ffffff; padding:40px 48px;">
+
+              <!-- Ícono de email animado (SVG inline, compatible con la mayoría de clientes) -->
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td align="center" style="padding-bottom:28px;">
+                    <div style="display:inline-block; background-color:rgba(242,108,54,0.12); border-radius:50%; width:72px; height:72px; text-align:center; line-height:72px;">
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="margin-top:18px;">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                          stroke="#f26c36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polyline points="22,6 12,13 2,6"
+                          stroke="#f26c36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Saludo personalizado -->
+              <p style="margin:0 0 8px; font-size:13px; font-weight:600; color:#f26c36; letter-spacing:1px; text-transform:uppercase;">
+                ¡Bienvenido/a!
+              </p>
+
+              <!-- Título principal -->
+              <h1 style="margin:0 0 16px; font-family:'Montserrat',Arial,sans-serif; font-size:24px; font-weight:700; color:#2c3e50; line-height:1.3; letter-spacing:-0.3px;">
+                Hola, <%= it.name %> 👋<br/>Tu acceso está activo
+              </h1>
+
+              <!-- Texto introductorio -->
+              <p style="margin:0 0 28px; font-family:'Montserrat',Arial,sans-serif; font-size:15px; font-weight:400; color:#2d6778; line-height:1.7;">
+                Te registraste en <strong style="color:#2c3e50;">Academia Expertia Capacita</strong>.
+                Para ingresar a la plataforma, simplemente hacé clic en el botón de abajo.
+                No necesitás contraseña.
+              </p>
+
+              <!-- CTA Button -->
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td align="center" style="padding-bottom:32px;">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
+                      xmlns:w="urn:schemas-microsoft-com:office:word"
+                      href="{{verification_url}}"
+                      style="height:52px;v-text-anchor:middle;width:280px;"
+                      arcsize="19%"
+                      strokecolor="#f26c36"
+                      fillcolor="#f26c36">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:700;">
+                        Acceder a la plataforma →
+                      </center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a class="btn-cta" href="<%= it.deelplink %>"
+                      style="display:inline-block; background-color:#f26c36; color:#ffffff;
+                        font-family:'Montserrat',Arial,sans-serif; font-size:15px; font-weight:700;
+                        text-decoration:none; padding:16px 40px; border-radius:10px;
+                        letter-spacing:0.3px; transition:background-color 0.3s ease;
+                        box-shadow:0 4px 14px rgba(242,108,54,0.35);">
+                      Acceder a la plataforma &rarr;
+                    </a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Separador -->
+              <hr style="border:none; border-top:1px solid #edf0f2; margin:0 0 28px;"/>
+
+              <!-- Tips box -->
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                style="background-color:#f8f9fa; border-radius:10px; border-left:4px solid #f26c36;">
+                <tr>
+                  <td style="padding:20px 24px;">
+                    <p style="margin:0 0 12px; font-family:'Montserrat',Arial,sans-serif; font-size:13px; font-weight:700; color:#2c3e50;">
+                      ¿No encontrás este correo luego?
+                    </p>
+                    <ul style="margin:0; padding-left:18px;">
+                      <li style="font-family:'Montserrat',Arial,sans-serif; font-size:13px; color:#2d6778; line-height:1.8; margin-bottom:4px;">
+                        Revisá la carpeta de <strong>Spam</strong> o <strong>Promociones</strong>.
+                      </li>
+                      <li style="font-family:'Montserrat',Arial,sans-serif; font-size:13px; color:#2d6778; line-height:1.8; margin-bottom:4px;">
+                        El link tiene una validez de <strong>24 horas</strong>.
+                      </li>
+                      <li style="font-family:'Montserrat',Arial,sans-serif; font-size:13px; color:#2d6778; line-height:1.8;">
+                        Si el botón no funciona, copiá el link de abajo directamente en tu navegador.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Link de respaldo -->
+              <p style="margin:20px 0 0; font-family:'Montserrat',Arial,sans-serif; font-size:12px; color:#adb5bd; line-height:1.6; word-break:break-all;">
+                Link alternativo:<br/>
+                <a href="<%= it.deelplink %>" style="color:#f26c36; text-decoration:none;">
+                  <%= it.deelplink %>
+                </a>
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- ===== FOOTER ===== -->
+          <tr>
+            <td align="center"
+              style="background-color:#f8f9fa; border-radius:0 0 16px 16px; padding:24px 40px; border-top:1px solid #edf0f2;">
+
+              <p style="margin:0 0 8px; font-family:'Montserrat',Arial,sans-serif; font-size:12px; color:#adb5bd; line-height:1.6;">
+                Recibiste este correo porque te registraste en Academia Expertia Capacita.<br/>
+                Si no fuiste vos, podés ignorar este mensaje sin problema.
+              </p>
+
+              <p style="margin:0; font-family:'Montserrat',Arial,sans-serif; font-size:12px; color:#adb5bd;">
+                <span style="font-weight:700; color:#f26c36;">&copy;</span> 2026 Fundación Expertia Capacita
+                &nbsp;·&nbsp;
+                <a href="<%= it.legal %>legal/privacy.html" style="color:#adb5bd; text-decoration:none;">Privacidad</a>
+                &nbsp;·&nbsp;
+                <a href="<%= it.legal %>legal/terms.html" style="color:#adb5bd; text-decoration:none;">Términos</a>
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+        <!-- /Email container -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

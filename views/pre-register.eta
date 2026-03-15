@@ -29,25 +29,7 @@
           <button type="submit" id="btn" class="btn btn-primary btn-lg w-100 mb-3">Obtener mi clase gratis</button>
 
           <div id="msg" class="alert alert-warning <%= (it.msg && it.msg.length)?'':'d-none' %>" role="alert">
-            <% if (it.msg && it.msg[1]==1 { %>
-              <p>El nombre de usuario es obligatorio.</p>
-            <% } %>
-            <% if (it.msg && it.msg[1]==1 { %>
-              <p>Reglas del nombre de usuario:<ul>
-                <li>Debe tener entre 3 y 39 caracteres</li>
-                <li>Puede contener letras, números, punto (.), guion (-) o subguion (_)</li>
-                <li>Debe empezar con una letra o número</li>
-                <li>No puede terminar con ., - o _</li>
-                <li>No puede tener símbolos repetidos (.., --, __)</li>
-                <li>Algunos nombres están reservados (por ejemplo: admin, support, root)</li>
-              </ul></p>
-            <% } %>
-            <% if (it.msg && it.msg[2]==1 { %>
-              <p>El correo electrónico es obligatorio.</p>
-            <% } %>
-            <% if (it.msg && it.msg[3]==1 { %>
-              <p>El formato del correo electrónico no es válido.</p>
-            <% } %>
+
           </div>
 
           <p class="form-note text-center">* Recibirás un email con un acceso directo (Deeplink) para comenzar tu capacitación ahora mismo.</p>

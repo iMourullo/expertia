@@ -20,8 +20,8 @@ app.use('/', rou);
 try {
   let port = sys.normalizePort(process.env.PORT || process.env.APP_PRT || '7070');
   app.listen(port, () => {
-    console.log('Academia Expertia Capacita, listening at http://%s:%s', process.env.APP_DOM, process.env.APP_PRT);
+    console.log('✅ Academia Expertia Capacita, listening at http://%s:%s', process.env.APP_DOM, process.env.APP_PRT);
   })
 } catch (error) {
-  console.error('Error loading .env file:', error.message);
+  console.error('❌ Error loading .env file:', error.message);
 }
